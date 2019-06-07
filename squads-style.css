@@ -1,0 +1,286 @@
+html, 
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h3 {
+    margin: 0px 0px 10px;
+}
+
+a {
+    color: #1a73e8;
+    font-size: 14px;
+}
+
+a:visited {
+    color: #1a73e8;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 18px;
+    border-radius: 100px
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.icon.actived, .icon:hover  {
+    background-color: #e0e0e0;
+}
+
+.icon-menu {
+    background-image: url('img/icons/menu-button.png');
+    margin-right: 5px;
+}
+
+.icon-list {
+    background-image: url('img/icons/list.png');
+}
+
+.icon-square {
+    background-image: url('img/icons/square.png');
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    width: 300px;
+    padding: 10px;
+    background: #3a3a3a;
+    overflow: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.menu-opened .menu {
+    display: block;
+}
+
+.menu .title {
+    color: white;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.menu .tip {
+    color: #b9b9b9;
+    background: #272727;
+    padding: 8px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.header {
+    position: absolute;
+    height: 70px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.header .title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.header .title > span {
+    font-size: 26px;
+}
+
+.header .title .skills span {
+    margin: 0px 10px !important;
+}
+
+.container {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.menu-opened .container {
+    left: 300px;
+}
+
+.squad-list {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    overflow: auto;
+    padding: 0px 30px 30px 30px;
+}
+
+.squad-item {
+    height: fit-content;
+    background: #e0e0e0;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 0px 40px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.compact-mode .squad-item {
+    max-width: 100px;
+}
+
+.squad-item  h3 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.compact-mode .squad-item h3 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.member {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.member .photo {
+    position: relative;
+}
+
+.member .photo.head::after {
+    content: 'LÍDER';
+    font-size: 10px;
+    color: white;
+    background: #f7860b;
+    padding: 2px 8px;
+    border-radius: 100px;
+    position: absolute;
+    top: -12px;
+    left: 2px;
+}
+
+.member .photo img {
+    border: 0px;
+    border-radius: 100px;
+}
+
+.member .content {
+    display: block;
+    width: 250px;
+    margin-left: 10px;
+}
+
+.compact-mode .member .content {
+    display: none;
+}
+
+.member .title {
+    position: relative;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.member .title.head {
+    padding-right: 50px;
+}
+
+.member .opened::after {
+    content: 'ABERTO';
+    font-size: 10px;
+    color: white;
+    background: #9e9e9e;
+    padding: 2px 8px;
+    border-radius: 100px;
+    position: absolute;
+    top: -7px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.skills span {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: 100px;
+    color: white;
+    margin: 0px 5px 5px 0px;
+    font-weight: 500;
+}
+
+.skills .cloud {
+    background: #1687e0;
+}
+
+.skills .dev {
+    background: #7a58b7;
+}
+
+.skills .ui {
+    background: #F44336;
+}
+
+.skills .mobile {
+    background: #f563aa;
+}
+
+.skills .ai {
+    background: #6c5ce7;
+}
+
+.skills .ux {
+    background: repeating-linear-gradient(
+        -55deg,
+        #c42c75,
+        #c42c75 4px,
+        #f563aa 4px,
+        #f563aa 10px
+    );
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.6);
+}
+
+.skills .erp {
+    background: #138a04;
+}
+
+.skills .other {
+    background: #636e72;
+}
+
+.menu .skills span {
+    cursor: pointer;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="SquadsApp">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <link rel="stylesheet" href="squads-style.css">
+    <script src="squads-data.js"></script>
+    <script src="squads-controller.js"></script>
+</head>
+<body ng-controller="SquadsCtrl">
+    <div class="main" ng-class="{'menu-opened': menuOpened, 'compact-mode': compactMode}">
+        <!-- Menu -->
+        <div class="menu">
+            <div class="tip">
+                Clique em um dos skills para filtrar
+            </div>
+            <div ng-repeat="skill in skillsData">
+                <div class="title"><span>{{ skill[0] }}</span></div>
+                <div class="skills">
+                    <span 
+                        ng-repeat="skillName in skill[1]" 
+                        ng-class="skill[0]" 
+                        ng-click="filterBySkill(skill[0], skillName)">{{ skillName }}</span>
+                </div>
+            </div>
+        </div>
+        <!-- Menu -->
+        <div class="container">
+            <div class="header">
+                <div class="icon icon-menu" ng-class="{'actived': menuOpened}" ng-click="openMenu()" title="Escolher Skills"></div>
+                <div class="title">
+                    <span>Squads Inovação</span>
+                    <div class="skills" ng-hide="skillFilter == null">
+                        <span ng-class="skillFilter[0]">{{ skillFilter[1]}}</span>
+                        <a href="#" ng-click="resetFilter()">Limpar filtro</a>
+                    </div>
+                </div>
+                <div class="icon" 
+                    title="{{ compactMode ? 'Modo detalhado' : 'Modo compacto'}}"
+                    ng-class="{'icon-square': compactMode == false, 'icon-list': compactMode == true}" 
+                    ng-click="changeMode()"></div>
+            </div>
+            <!-- Squad List -->
+            <div class="squad-list">
+                <div class="squad-item" ng-repeat="squad in squadsData">
+                    <h3>{{ squad.name }}</h3>
+                    <div class="member" ng-repeat="member in squad.members">
+                        <div class="photo" ng-class="{'head': member.head == true}" title="{{ member.name }}">
+                            <img ng-src="img/{{ member.opened ? 'opened' : member.name }}.jpeg"></img>
+                        </div>
+                        <div class="content">
+                            <div class="title" ng-class="{'opened': member.opened == true}">{{ member.name }}</div>
+                            <div class="skills">
+                                <span ng-repeat="skill in member.skills" ng-class="skill.split(':')[0]">{{ skill.split(":")[1] }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Squad List -->
+        </div>
+    </div>
+</body>
+</html>
