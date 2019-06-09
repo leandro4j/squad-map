@@ -38,7 +38,7 @@ SQUADS_DATA = {
                 },
                 {
                     "name": "Arthur Silva",
-                    "skills": ["erp:ERP specialist","erp:Support specialist","erp:Project Manager"]
+                    "skills": ["erp:ERP specialist","erp:Support specialist","other:Project Manager"]
                 },
                 {
                     "name": "Marcelo Martins",
@@ -63,7 +63,7 @@ SQUADS_DATA = {
                     "skills": ["cloud:Rancher specialist","cloud:DevOps","cloud:AWS","cloud:Docker specialist","dev:Back-end","dev:Java","dev:GO","ui:Front-end","ui:AngularJS"]
                 },
                 {
-                    "name": "Infra Specialist",
+                    "name": "Infra Cloud Sênior",
                     "opened": true,
                     "skills": ["cloud:AWS specialist","cloud:Infra specialist","cloud:Security specialist","cloud:Docker","cloud:DevOps"]
                 }
@@ -101,7 +101,7 @@ SQUADS_DATA = {
                 {
                     "name": "Paulo Soares",
                     "head": true,
-                    "skills": ["ai:Machine Learning specialist","ai:AI specialist","dev:Back-end specialist","dev:Java specialist","dev:Architect evangelist","dev:Elasticsearch specialist","dev:Ruby","ui:Front-end","ui:Flex","ui:GWT","ui:AngularJS","erp:ERP","cloud:AWS","cloud:Rancher","cloud:Docker"]
+                    "skills": ["ai:Machine Learning specialist","ai:AI specialist","ai:Data Mining specialist","ai:Dialogflow specialist","ai:TensorFlow","dev:Back-end specialist","dev:Java specialist","dev:Architect evangelist","dev:Elasticsearch specialist","dev:Ruby","ui:Front-end","ui:Flex","ui:GWT","ui:AngularJS","erp:ERP","cloud:AWS","cloud:Rancher","cloud:Docker"]
                 },
                 {
                     "name": "Nilson Silva",
@@ -117,7 +117,12 @@ SQUADS_DATA = {
                 },
                 {
                     "name": "Willian Araujo",
-                    "skills": ["ux:UX Designer specialist","ux:Designer","erp:ERP specialist","erp:Support specialist","erp:Project Manager","other:Economist"]
+                    "skills": ["ux:UX Designer specialist","erp:ERP specialist","erp:Support specialist","other:Project Manager","other:Economist"]
+                },
+                {
+                    "name": "Java Fullstack Sênior",
+                    "opened": true,
+                    "skills": ["dev:Back-end specialist","dev:Java specialist","dev:Architect evangelist","ui:Front-end","ui:AngularJS"]
                 }
             ]
         },
@@ -127,7 +132,7 @@ SQUADS_DATA = {
                 {
                     "name": "Willian Araujo",
                     "head": true,
-                    "skills": ["ux:UX Designer specialist","ux:Designer","erp:ERP specialist","erp:Support specialist","erp:Project Manager","other:Economist"]
+                    "skills": ["ux:UX Designer specialist","erp:ERP specialist","erp:Support specialist","other:Project Manager","other:Economist"]
                 },
                 {
                     "name": "Arthur Giffoni",
@@ -199,7 +204,7 @@ SQUADS_DATA = {
                 },
                 {
                     "name": "Gladston Silva",
-                    "skills": ["other:Scrum Master specialist","other:Culture Code","other:Design Thinking","ux:UX Designer","erp:ERP specialist"]
+                    "skills": ["other:Scrum Master specialist","other:Culture Code","other:Design Thinking","other:Project Manager","ux:UX Designer","erp:ERP specialist"]
                 },
                 {
                     "name": "Leandro Bruce",
@@ -208,6 +213,11 @@ SQUADS_DATA = {
                 {
                     "name": "Ana Dorázio",
                     "skills": ["other:Administrative specialist"]
+                },
+                {
+                    "name": "UI Designer Sênior",
+                    "opened": true,
+                    "skills": ["ux:UX Designer specialist","ux:UI Designer specialist","ux:Designer specialist","other:Marketing"]
                 }
             ]
         }

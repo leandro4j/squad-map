@@ -2,6 +2,8 @@
 <html ng-app="SquadsApp">
 <head>
     <meta charset="UTF-8">
+    <title>Squads Sankhya</title>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
@@ -11,7 +13,7 @@
 </head>
 <body ng-controller="SquadsCtrl">
     <div class="main" ng-class="{'menu-opened': menuOpened, 'compact-mode': compactMode}">
-        <!-- Menu -->
+        <!-- start:Menu -->
         <div class="menu">
             <div class="tip">
                 Clique em um dos skills para filtrar
@@ -26,14 +28,15 @@
                 </div>
             </div>
         </div>
-        <!-- Menu -->
+        <!-- end:Menu -->
         <div class="container">
+            <!-- start:Header -->
             <div class="header">
                 <div class="icon icon-menu" ng-class="{'actived': menuOpened}" ng-click="openMenu()" title="Escolher Skills"></div>
                 <div class="title">
                     <span>Squads Inovação</span>
-                    <div class="skills" ng-hide="skillFilter == null">
-                        <span ng-class="skillFilter[0]">{{ skillFilter[1]}}</span>
+                    <div class="skills" ng-hide="currentSkillFilter == null">
+                        <span ng-class="currentSkillFilter[0]">{{ currentSkillFilter[1]}}</span>
                         <a href="#" ng-click="resetFilter()">Limpar filtro</a>
                     </div>
                 </div>
@@ -42,12 +45,13 @@
                     ng-class="{'icon-square': compactMode == false, 'icon-list': compactMode == true}" 
                     ng-click="changeMode()"></div>
             </div>
-            <!-- Squad List -->
+            <!-- end:Header -->
+            <!-- start:Squad List -->
             <div class="squad-list">
                 <div class="squad-item" ng-repeat="squad in squadsData">
-                    <h3>{{ squad.name }}</h3>
-                    <div class="member" ng-repeat="member in squad.members">
-                        <div class="photo" ng-class="{'head': member.head == true}" title="{{ member.name }}">
+                    <h3 title="{{ squad.name }}">{{ squad.name }}</h3>
+                    <div class="member" ng-mouseover="memberMouseOver($event)" ng-mouseout="memberMouseOut($event)" ng-repeat="member in squad.members">
+                        <div class="photo" ng-class="{'head': member.head == true}">
                             <img ng-src="img/{{ member.opened ? 'opened' : member.name }}.jpeg"></img>
                         </div>
                         <div class="content">
@@ -59,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Squad List -->
+            <!-- end:Squad List -->
         </div>
     </div>
 </body>
