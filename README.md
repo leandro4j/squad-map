@@ -2,7 +2,7 @@
 
 Squads Map é uma aplicação front-end que apresenta de forma intuitiva todos os membros de uma equipe na forma de Squads. O mapeamento visual ajuda os profissionais de uma organização a encontrar outros especialistas. Com Squads Map se torna muito mais fácil montar uma Guilda, Seção ou até mesmo Tribo.
 
-Veja um exemplo
+Acesse
 [Sankhya Squads Map](http://sankhya-squads.s3-website-us-east-1.amazonaws.com)
 
 ### O que são Squads?
@@ -15,6 +15,6 @@ Esse modelo vem se popularizando, sobretudo no universo das startups. Essa tend�
 
 Para que cada grupo tenha autonomia o suficiente para as coisas funcionarem bem, é necessária muita comunicação entre os squads. É por isso que existem chapters, tribes e guilds. Esses três fatores são responsáveis por manter alinhados os objetivos da empresa como um todo.
 
-**Chapters** são linhas que atravessam todos os squads, passando por profissionais de um mesmo setor. Isso significa que todos o funcionários do setor financeiro, por exemplo, estarão alinhados entre si a respeito do que está acontecendo em cada squad.
+**Chapters** (seção) são linhas que atravessam todos os squads, passando por profissionais de um mesmo setor. Isso significa que todos o funcionários do setor financeiro, por exemplo, estarão alinhados entre si a respeito do que está acontecendo em cada squad.
 
-Já **tribes** são a junção de dois ou mais squads, que possuem objetivos similares e precisam estar em maior conexão. Por fim, a terceira maneira de manter os squads alinhados são os **guilds**. Trata-se de grupos formados por pessoas de qualquer área, mas que se interessam por algum assunto em comum e, por isso, se juntam para manter uma comunicação.
+Já **tribes** (tribo) são a junção de dois ou mais squads, que possuem objetivos similares e precisam estar em maior conexão. Por fim, a terceira maneira de manter os squads alinhados são os **guilds** (guilda). Trata-se de grupos formados por pessoas de qualquer área, mas que se interessam por algum assunto em comum e, por isso, se juntam para manter uma comunicação.
