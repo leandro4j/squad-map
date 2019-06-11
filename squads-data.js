@@ -164,7 +164,7 @@ SQUADS_DATA = {
                 },
                 {
                     "name": "Gabriel Beirigo",
-                    "skills": ["ui:Front-end specialist","ui:AngularJS specialist","dev:NodeJS","ux:UI Designer"]
+                    "skills": ["ui:Front-end specialist","ui:AngularJS specialist", "ui:Angular 2+ specialist", "dev:NodeJS","ux:UI Designer"]
                 },
                 {
                     "name": "Highlander Dantas",
