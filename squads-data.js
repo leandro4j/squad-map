@@ -26,7 +26,7 @@ SQUADS_DATA = {
                 },
                 {
                     "name": "Ayne",
-                    "skills": ["ui:Front-end specialist","ui:AngularJS","dev:Java"]
+                    "skills": ["dev:Java","ui:Front-end specialist","ui:AngularJS","ui:Angular","ux:UX Designer","other:Scrum Master","other:Project Manager"]
                 },
                 {
                     "name": "Willian Coutinho",
@@ -34,7 +34,7 @@ SQUADS_DATA = {
                 },
                 {
                     "name": "Gleicimara",
-                    "skills": ["ux:UX Designer specialist","other:Product Manager"]
+                    "skills": ["ux:UX Designer specialist","other:Product Manager","other:Scrum Master"]
                 },
                 {
                     "name": "Arthur Silva",
@@ -101,11 +101,11 @@ SQUADS_DATA = {
                 {
                     "name": "Paulo Soares",
                     "head": true,
-                    "skills": ["ai:Machine Learning specialist","ai:AI specialist","ai:Data Mining specialist","ai:Dialogflow specialist","ai:TensorFlow","dev:Back-end specialist","dev:Java specialist","dev:Architect evangelist","dev:Elasticsearch specialist","dev:Ruby","ui:Front-end","ui:Flex","ui:GWT","ui:AngularJS","erp:ERP","cloud:AWS","cloud:Rancher","cloud:Docker"]
+                    "skills": ["ai:Machine Learning specialist","ai:AI specialist","ai:Data Mining specialist","ai:Dialogflow specialist","ai:TensorFlow","dev:Back-end specialist","dev:Java specialist","dev:Spring","dev:Architect evangelist","dev:Elasticsearch specialist","dev:Ruby","dev:Python","dev:R","dev:Linux specialist","dev:ActiveMQ specialist","dev:Git specialist","dev:Maven","dev:Regex","dev:SonarQube","ui:Front-end","ui:Flex","ui:GWT","ui:AngularJS","mobile:Android","erp:ERP","cloud:AWS","cloud:Rancher","cloud:Docker specialist","cloud:DevOps","cloud:Heroku","other:Scrum Master"]
                 },
                 {
                     "name": "Nilson Silva",
-                    "skills": ["dev:Back-end","dev:Java","dev:Elasticsearch","ui:Front-end","ui:AngularJS","ui:GWT","erp:ERP"]
+                    "skills": ["dev:Back-end","dev:Java","dev:Elasticsearch","ui:Front-end","ui:AngularJS","ui:GWT","ux:Designer","erp:ERP"]
                 },
                 {
                     "name": "Hugo Cunha",
@@ -136,7 +136,7 @@ SQUADS_DATA = {
                 },
                 {
                     "name": "Arthur Giffoni",
-                    "skills": ["dev:Back-end specialist","dev:Ruby specialist","dev:Java specialist","ui:Front-end","ui:AngularJS","cloud:Heroku"]
+                    "skills": ["dev:Back-end specialist","dev:Rails specialist","dev:Ruby specialist","dev:Rspec specialist","dev:Java specialist","dev:C","dev:Elasticsearch","ui:Front-end","ui:Angular","ui:ReactJS","mobile:Android","cloud:Heroku"]
                 }
             ]
         },
@@ -160,7 +160,7 @@ SQUADS_DATA = {
                 {
                     "name": "Gabriel Rezende",
                     "head": true,
-                    "skills": ["dev:Back-end specialist","dev:Java","dev:NodeJS","ui:Front-end","ui:AngularJS"]
+                    "skills": ["dev:Back-end specialist","dev:Java","dev:Spring","dev:NodeJS","dev:PHP","dev:C#","dev:.NET","dev:Delphi","dev:MongoDB","dev:Git","ui:Front-end","ui:AngularJS","ui:ReactJS","mobile:ReactNative","mobile:Android","mobile:iOS","cloud:AWS","cloud:Docker","erp:ERP specialist","other:Scrum Master"]
                 },
                 {
                     "name": "Gabriel Beirigo",
